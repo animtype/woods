@@ -1,0 +1,32 @@
+<main>
+      <div class="screen">
+            
+
+            <mat-card>
+                  <mat-card-content class="scene">
+
+                  </mat-card-content>
+                  <mat-divider></mat-divider>
+                  <mat-card-content  class="card-settings">                        
+
+                        <label>širina (width)</label>
+                        <mat-slider [(ngModel)]="sliderWidth" color="primary" thumbLabel (input)="onSliderChange()" [max]="max" [min]="min" [step]="step"></mat-slider>
+                        <label>{{ sliderWidth }}<small> cm</small></label>
+
+                        <label>višina (height)</label>
+                        <mat-slider [(ngModel)]="sliderHeight" color="primary" thumbLabel [max]="max" [min]="min" [step]="step"></mat-slider>
+                        <label>{{ sliderHeight }}<small> cm</small></label>
+
+                        <label>globina (depth)</label>
+                        <mat-slider [(ngModel)]="sliderDepth" color="primary" thumbLabel [max]="max" [min]="min" [step]="step"></mat-slider>
+                        <label>{{ sliderDepth }}<small> cm</small></label>
+
+                        <label>ostalo</label><mat-slide-toggle ngModel name="sliderFeet" color="primary">nogice</mat-slide-toggle>
+
+                  </mat-card-content>
+            </mat-card>
+
+
+
+      </div>
+</main>
